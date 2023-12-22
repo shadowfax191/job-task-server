@@ -32,13 +32,7 @@ async function run() {
     const TaskCollection = client.db("taskDB").collection("task");
     const UsersCollection = client.db("taskDB").collection("users");
 
-    app.post('/users', async (req, res) => {
-
-      const user = req.body
-      const result = await UsersCollection.insertOne(user)
-      res.send(result)
-    })
-
+    
  
 
 
